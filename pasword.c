@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 int main()
 {
@@ -10,11 +9,15 @@ int main()
     printf("Enter your password: ");
     while (1)
     {
-        /* code */
+		 /* 
+		 
+	*Do It As Maths^
+		 
+		 */
     
     
     fgets(password, sizeof(password), stdin);
-    password[strcspn(password, "\n")] = 0; // Remove newline character
+    password[strcspn(password, "\n")] = 0;
     if (strlen(password) > 8) {    
         chacker++;
     
